@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import CoreLib
 
-
-class AlamoFireWorker {
+public class AlamoFireWorker {
     
-    static let sharedInstance = AlamoFireWorker()
+    public static let sharedInstance = AlamoFireWorker()
     
-    func getURLRequestWorker(url:String) -> String {
-        return "Hello World"
+    public func getURLRequestWorker(url:String) -> String {
+        
+        let str = AlamoreServices.sharedInstance.getURLRequest(url: url)
+        
+        return str
     }
     
 }
