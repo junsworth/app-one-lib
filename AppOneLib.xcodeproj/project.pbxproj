@@ -13,6 +13,7 @@
 		632EE1641E50ADA500710EDF /* CoreLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE1631E50ADA500710EDF /* CoreLib.framework */; };
 		632EE1661E50ADC100710EDF /* AppOneLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE1651E50ADC100710EDF /* AppOneLib.swift */; };
 		632EE1691E50B47500710EDF /* CoreLib.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 632EE1681E50B47500710EDF /* CoreLib.framework.dSYM */; };
+		632EE1901E50F0C200710EDF /* AlamofireWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE18F1E50F0C200710EDF /* AlamofireWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		632EE1631E50ADA500710EDF /* CoreLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLib.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ParentWorkspace-gqqwbiscnejuajfozvvcrvskkerc/Build/Products/Debug-iphonesimulator/CoreLib.framework"; sourceTree = "<group>"; };
 		632EE1651E50ADC100710EDF /* AppOneLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOneLib.swift; sourceTree = "<group>"; };
 		632EE1681E50B47500710EDF /* CoreLib.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CoreLib.framework.dSYM; path = Carthage/Build/iOS/CoreLib.framework.dSYM; sourceTree = "<group>"; };
+		632EE18F1E50F0C200710EDF /* AlamofireWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		632EE14A1E50A2DF00710EDF /* src */ = {
 			isa = PBXGroup;
 			children = (
+				632EE18E1E50F0AD00710EDF /* Workers */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -123,6 +126,14 @@
 				632EE1631E50ADA500710EDF /* CoreLib.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		632EE18E1E50F0AD00710EDF /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				632EE18F1E50F0C200710EDF /* AlamofireWorker.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632EE1901E50F0C200710EDF /* AlamofireWorker.swift in Sources */,
 				632EE1661E50ADC100710EDF /* AppOneLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
