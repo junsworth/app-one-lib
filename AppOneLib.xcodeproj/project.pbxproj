@@ -10,6 +10,9 @@
 		632EE0D81E50883400710EDF /* AppOneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE0CE1E50883400710EDF /* AppOneLib.framework */; };
 		632EE0DD1E50883400710EDF /* AppOneLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE0DC1E50883400710EDF /* AppOneLibTests.swift */; };
 		632EE0DF1E50883400710EDF /* AppOneLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 632EE0D11E50883400710EDF /* AppOneLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632EE1641E50ADA500710EDF /* CoreLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE1631E50ADA500710EDF /* CoreLib.framework */; };
+		632EE1661E50ADC100710EDF /* AppOneLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE1651E50ADC100710EDF /* AppOneLib.swift */; };
+		632EE1691E50B47500710EDF /* CoreLib.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 632EE1681E50B47500710EDF /* CoreLib.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +25,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		632EE1491E50A25800710EDF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				632EE1691E50B47500710EDF /* CoreLib.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		632EE0CE1E50883400710EDF /* AppOneLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppOneLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		632EE0D11E50883400710EDF /* AppOneLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppOneLib.h; sourceTree = "<group>"; };
@@ -29,6 +45,9 @@
 		632EE0D71E50883400710EDF /* AppOneLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppOneLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632EE0DC1E50883400710EDF /* AppOneLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOneLibTests.swift; sourceTree = "<group>"; };
 		632EE0DE1E50883400710EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632EE1631E50ADA500710EDF /* CoreLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLib.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ParentWorkspace-gqqwbiscnejuajfozvvcrvskkerc/Build/Products/Debug-iphonesimulator/CoreLib.framework"; sourceTree = "<group>"; };
+		632EE1651E50ADC100710EDF /* AppOneLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOneLib.swift; sourceTree = "<group>"; };
+		632EE1681E50B47500710EDF /* CoreLib.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CoreLib.framework.dSYM; path = Carthage/Build/iOS/CoreLib.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632EE1641E50ADA500710EDF /* CoreLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +73,8 @@
 		632EE0C41E50883400710EDF = {
 			isa = PBXGroup;
 			children = (
+				632EE1681E50B47500710EDF /* CoreLib.framework.dSYM */,
+				632EE1621E50AD9600710EDF /* Frameworks */,
 				632EE0D01E50883400710EDF /* AppOneLib */,
 				632EE0DB1E50883400710EDF /* AppOneLibTests */,
 				632EE0CF1E50883400710EDF /* Products */,
@@ -71,8 +93,10 @@
 		632EE0D01E50883400710EDF /* AppOneLib */ = {
 			isa = PBXGroup;
 			children = (
+				632EE14A1E50A2DF00710EDF /* src */,
 				632EE0D11E50883400710EDF /* AppOneLib.h */,
 				632EE0D21E50883400710EDF /* Info.plist */,
+				632EE1651E50ADC100710EDF /* AppOneLib.swift */,
 			);
 			path = AppOneLib;
 			sourceTree = "<group>";
@@ -84,6 +108,21 @@
 				632EE0DE1E50883400710EDF /* Info.plist */,
 			);
 			path = AppOneLibTests;
+			sourceTree = "<group>";
+		};
+		632EE14A1E50A2DF00710EDF /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		632EE1621E50AD9600710EDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				632EE1631E50ADA500710EDF /* CoreLib.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +147,8 @@
 				632EE0CA1E50883400710EDF /* Frameworks */,
 				632EE0CB1E50883400710EDF /* Headers */,
 				632EE0CC1E50883400710EDF /* Resources */,
+				632EE1491E50A25800710EDF /* CopyFiles */,
+				632EE15F1E50AD0000710EDF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -148,6 +189,7 @@
 				TargetAttributes = {
 					632EE0CD1E50883400710EDF = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					632EE0D61E50883400710EDF = {
@@ -191,11 +233,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		632EE15F1E50AD0000710EDF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		632EE0C91E50883400710EDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632EE1661E50ADC100710EDF /* AppOneLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +379,7 @@
 		632EE0E31E50883400710EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.AppOneLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +399,7 @@
 		632EE0E41E50883400710EDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +418,7 @@
 		632EE0E61E50883400710EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = AppOneLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.AppOneLibTests;
@@ -367,6 +430,7 @@
 		632EE0E71E50883400710EDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = AppOneLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.AppOneLibTests;
@@ -394,6 +458,7 @@
 				632EE0E41E50883400710EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		632EE0E51E50883400710EDF /* Build configuration list for PBXNativeTarget "AppOneLibTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +467,7 @@
 				632EE0E71E50883400710EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
