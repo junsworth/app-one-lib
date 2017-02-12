@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class AlamoFireWorker {
     
     static let sharedInstance = AlamoFireWorker()
